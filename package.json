@@ -1,0 +1,22 @@
+{
+    "private": true,
+    "scripts": {
+        "build": "turbo run build",
+        "dev": "turbo run dev",
+        "api:dev": "turbo run dev --filter=api",
+        "admin:dev": "turbo run dev --filter=admin --filter=api",
+        "web:dev": "turbo run dev --filter=web --filter=api",
+        "lint": "turbo run lint",
+        "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+        "upall": "pnpm up --filter @ink/* --latest && pnpm up --latest"
+    },
+    "devDependencies": {
+        "@ink/eslint-config": "workspace:*",
+        "@turbo/gen": "^1.10.12",
+        "eslint": "^8.46.0",
+        "prettier": "^3.0.1",
+        "turbo": "^1.10.12"
+    },
+    "packageManager": "pnpm@8.6.10",
+    "name": "ink"
+}

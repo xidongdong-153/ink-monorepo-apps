@@ -1,0 +1,43 @@
+{
+    "name": "@ink/admin",
+    "private": true,
+    "version": "0.0.0",
+    "description": "通用后台管理应用, 管理一切。",
+    "scripts": {
+        "dev": "vite",
+        "build": "tsc && vite build",
+        "lint": "pnpm lint:es && pnpm lint:style",
+        "lint:es": "eslint . --ext ts,tsx --fix --report-unused-disable-directives --max-warnings 0",
+        "lint:style": "stylelint \"**/*.css\" --fix --cache --cache-location node_modules/.cache/stylelint/",
+        "preview": "vite preview"
+    },
+    "dependencies": {
+        "@ant-design/cssinjs": "^1.16.2",
+        "antd": "^5.8.2",
+        "dayjs": "^1.11.9",
+        "deepmerge": "^4.3.1",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0"
+    },
+    "devDependencies": {
+        "@ink/eslint-config": "workspace:*",
+        "@ink/stylelint-config": "workspace:*",
+        "@ink/ts-config": "workspace:*",
+        "@types/node": "^20.4.9",
+        "@types/react": "^18.2.20",
+        "@types/react-dom": "^18.2.7",
+        "@vitejs/plugin-react": "^4.0.4",
+        "autoprefixer": "^10.4.14",
+        "eslint": "^8.46.0",
+        "postcss": "^8.4.27",
+        "postcss-import": "^15.1.0",
+        "postcss-mixins": "^9.0.4",
+        "postcss-nested": "^6.0.1",
+        "postcss-nesting": "^12.0.1",
+        "prettier": "^3.0.1",
+        "stylelint": "^15.10.2",
+        "tailwindcss": "^3.3.3",
+        "typescript": "^5.1.6",
+        "vite": "^4.4.9"
+    }
+}

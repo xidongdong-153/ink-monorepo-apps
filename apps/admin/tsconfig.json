@@ -1,0 +1,13 @@
+{
+  "extends": "@ink/ts-config/react.json",
+  "compilerOptions": {
+      "baseUrl": ".",
+      "outDir": "./dist",
+      "paths": {
+          "@/*": ["src/*"]
+      },
+      "types": ["@types/node"]
+  },
+  "include": ["./src", "./typings/**/*.d.ts"],
+  "references": [{ "path": "./tsconfig.node.json" }]
+}
